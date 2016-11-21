@@ -1,14 +1,19 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="15G1108" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="WorldClockTutorial_Swift" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -16,11 +21,74 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2WY-dz-v0t">
+                                <rect key="frame" x="138.5" y="92" width="98" height="54"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="45"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wFX-A1-75d">
+                                <rect key="frame" x="161.5" y="186" width="52.5" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CLC-aF-mOu">
+                                <rect key="frame" x="133.5" y="250.5" width="108" height="33"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="New York City"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aNU-Ri-gax">
+                                <rect key="frame" x="168.5" y="298.5" width="38" height="33"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="Paris"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fp2-ge-Ejk">
+                                <rect key="frame" x="155.5" y="346.5" width="64" height="33"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="Moscow"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nde-ms-OPj">
+                                <rect key="frame" x="144.5" y="394.5" width="86" height="33"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="Hong Kong"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ae9-4i-5qt">
+                                <rect key="frame" x="160.5" y="490.5" width="54" height="33"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="Seattle"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p2q-YW-3ia">
+                                <rect key="frame" x="153.5" y="442.5" width="68" height="33"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="Honolulu"/>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="2WY-dz-v0t" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="52O-HI-Seb"/>
+                            <constraint firstItem="ae9-4i-5qt" firstAttribute="top" secondItem="p2q-YW-3ia" secondAttribute="bottom" constant="15" id="5Qm-dQ-pnr"/>
+                            <constraint firstItem="fp2-ge-Ejk" firstAttribute="top" secondItem="aNU-Ri-gax" secondAttribute="bottom" constant="15" id="5q4-FM-Olk"/>
+                            <constraint firstItem="p2q-YW-3ia" firstAttribute="top" secondItem="Nde-ms-OPj" secondAttribute="bottom" constant="15" id="640-oP-fCd"/>
+                            <constraint firstItem="aNU-Ri-gax" firstAttribute="top" secondItem="CLC-aF-mOu" secondAttribute="bottom" constant="15" id="GBz-a6-Pgr"/>
+                            <constraint firstItem="wFX-A1-75d" firstAttribute="centerX" secondItem="2WY-dz-v0t" secondAttribute="centerX" id="Hx2-8X-Mjl"/>
+                            <constraint firstItem="ae9-4i-5qt" firstAttribute="centerX" secondItem="p2q-YW-3ia" secondAttribute="centerX" id="Lyh-De-ae8"/>
+                            <constraint firstItem="p2q-YW-3ia" firstAttribute="centerX" secondItem="Nde-ms-OPj" secondAttribute="centerX" id="MNS-Ft-NVk"/>
+                            <constraint firstItem="fp2-ge-Ejk" firstAttribute="centerX" secondItem="aNU-Ri-gax" secondAttribute="centerX" id="Srx-4K-3Cq"/>
+                            <constraint firstItem="2WY-dz-v0t" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" multiplier="0.5" constant="-48.25" id="V63-hV-jF6"/>
+                            <constraint firstItem="CLC-aF-mOu" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="aiM-8p-aif"/>
+                            <constraint firstItem="aNU-Ri-gax" firstAttribute="centerX" secondItem="CLC-aF-mOu" secondAttribute="centerX" id="ekP-OW-ER8"/>
+                            <constraint firstItem="Nde-ms-OPj" firstAttribute="centerX" secondItem="fp2-ge-Ejk" secondAttribute="centerX" id="kZu-qC-aiH"/>
+                            <constraint firstItem="wFX-A1-75d" firstAttribute="top" secondItem="2WY-dz-v0t" secondAttribute="bottom" constant="40" id="lRy-rN-fix"/>
+                            <constraint firstItem="CLC-aF-mOu" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" multiplier="0.8" id="rCR-pd-Dra"/>
+                            <constraint firstItem="Nde-ms-OPj" firstAttribute="top" secondItem="fp2-ge-Ejk" secondAttribute="bottom" constant="15" id="ytc-xu-oZH"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="117.59999999999999" y="122.78860569715144"/>
         </scene>
     </scenes>
 </document>
